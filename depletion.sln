@@ -7,12 +7,18 @@ Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "depletion", "depletion.vfpr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Debug|x64.ActiveCfg = Debug|x64
+		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Debug|x64.Build.0 = Debug|x64
 		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Debug|x86.ActiveCfg = Debug|Win32
 		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Debug|x86.Build.0 = Debug|Win32
+		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Release|x64.ActiveCfg = Release|x64
+		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Release|x64.Build.0 = Release|x64
 		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Release|x86.ActiveCfg = Release|Win32
 		{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection

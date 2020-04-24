@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{1B484C42-9AC3-4E12-9E4D-CB4F54022D80}">
 	<Platforms>
-		<Platform Name="Win32"/></Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
 	<Configurations>
 		<Configuration Name="Debug|Win32">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
@@ -22,9 +23,200 @@
 				<Tool Name="VFPreLinkEventTool"/>
 				<Tool Name="VFPreBuildEventTool"/>
 				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" PreprocessorDefinitions="fissup;&#xA;deplibtest;&#xA;fold_avg;&#xA;rho_edit;&#xA;shuf_new;&#xA;folding_rst;&#xA;print_vipre;&#xA;cold_branch;&#xA;rodsearch;&#xA;DEP_B10;&#xA;fueltemp;&#xA;print_ocean;&#xA;Leak_Corr;&#xA;CALHM;&#xA;JUMPIN;&#xA;FINDTAVG;&#xA;PRINTSIM;&#xA;BRCAL;&#xA;mslb;&#xA;asym_fa;"/>
+				<Tool Name="VFLinkerTool" SuppressStartupBanner="true" SubSystem="subSystemConsole" StackReserveSize="99999999" StackCommitSize="99999999" LargeAddressAware="addrAwareLarge"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
 	<Files>
 		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
 		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
-		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl"/></Files>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="NewFolder1">
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\AdfM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\AdjFluxM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\AdjM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\BicgsM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CardsM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CdfM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CntlM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CntrodM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Comall_1dM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CRodBankM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CRodCuspCorM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\CustomCrDataM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DecayhtM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DeffgM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DefhexM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DefpntM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DefsfcM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DepMainM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DepVarM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DetM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DmallocM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\DummyM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\EditM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\FbvarM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\FdmCplCoefsM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\FfM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\FilesM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\GenEditM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\GeomhfcM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\GeomhM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\GeomM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Gi_varM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Gi_varmapM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Gi_varmcopyM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Gmres_varM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\IluFacM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\InitializeM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\InitvecM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\InpProcM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\InptempM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\IntrTypeM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\ItrcntlM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\KinM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\LscoefhM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\LscoefM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\LufacM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\MemAllocM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Nm_dimM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\NormalizeM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\NtbytesM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\OnedkM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\ParagonM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\ParamM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\PartrodM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\PeakValM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\PeM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\PertbM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Ph_dimM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Ph_nondimM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Ph_specM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\PinprM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\PowerM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\RadshapeM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\Driver\scarpkit.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\Driver\scarpmain.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\Driver\scarppass.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\Driver\scarpvars.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SetLinSysM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SolLinSysM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SolvecM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SrcM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SSeigM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SSOuterM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\SsvarM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\Thgeom1_1dM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\ThgeomM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\ThopdataM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\TimesM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\TleakM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\TPENDriveM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\TrcntlM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\UnfoldFluxM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\UpdXeSmM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\XesmCalM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\XesmM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\XsecFdbkM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\TPEN\SCARP\XsecM.f90"/></Filter>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\FastDepletion.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_3D.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Adjoint.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_BiCG.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Branch.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Constant.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Control.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Core.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_CR.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Crud.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Depletion.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Detector.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_DF.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_FA.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_FastDepletion.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_File.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_FixSrc_Tr.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Flag.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Fluxvar.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Geometry.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_History.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_INP.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Kinetics.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Lscoef.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_MATFB.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_MaxMinAvg.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_maXS.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_miXS.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Nodal.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Nuclide.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Option.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_PinPOW.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Pinvar.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_RP.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_RST.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Solver.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_TH.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Time.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Transient.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Utile.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_XS_File.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_Xsec.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Inc_XYZ.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Main.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Adjoint.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Alloc.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Branch.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_CalReact.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_CharEdit.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Depletion.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Detector.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Function.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_GetNode.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_GetSome.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Heatfunc.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_InitCond.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Interface.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Manage.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Operator.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_PC.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Pinpow.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Save.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Sol2N.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Soldhat.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_SolFDM.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_SolLS.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_SolLU.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_SSnodal.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\MOD_STEAMTABLE.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_THdriver.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_THfunc.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_TPEN_Solver.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_TRnodal.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Watch.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_Wielandt.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Mod_XSFB.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\utils\odfile.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Read_File.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Read_I.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Run_Quasi.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Run_Steady.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Run_Transient.f90"/>
+		<File RelativePath="D:\OneDrive - unist.ac.kr\SOURCE_CODE\RASK-K-hexz2\src\src_all\Write_O.f90"/></Filter></Files>
 	<Globals/></VisualStudioProject>
